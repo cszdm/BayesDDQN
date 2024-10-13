@@ -1,1 +1,14 @@
-
+numpy
+pandas
+random
+csv
+heapq
+tensorflow
+itertools
+functools
+bayes_opt
+operator
+copy
+math
+scipy.linalg
+sklearn.preprocessing
