@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import numpy as np
 
+
 mpl.rcParams["font.sans-serif"] = ["SimHei"]
 mpl.rcParams["axes.unicode_minus"] = False
 plt.rcParams['axes.labelsize'] = 16  # xy轴label的size
