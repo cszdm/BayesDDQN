@@ -50,7 +50,7 @@ simulator/: code for simulation
 
 plot/: code for drawing figures of experimental results
 
-data-traces: dataset for wind speed and PMs workload, the citations of them are also given
+data-traces: dataset for wind speed and PMs workload, the citations of them are also given in data sources.md
 
 requirements.txt: Python dependencies
 
