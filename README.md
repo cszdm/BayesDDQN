@@ -119,37 +119,37 @@ For MTL-LSTM prediction accuracy:
 
 ```
 cd plot
-python Figure4-a.py
-python Figure4-b.py
-python Figure4-c.py
+python training_loss.py
+python energy_prediction.py
+python inlet_prediciton.py
 ```
 
 For energy consumption:
 
 ```
 cd plot
-python Figure5-a.py
-python Figure5-b.py
-python Figure5-c.py
-python Figure5-d.py
-python Figure5-e.py
+python TAS_energy.py
+python TA_energy.py
+python DeepEE_energy.py
+python TAWM_energy.py
+python BayesDDQN_energy.py
 ```
 
 For evaluating energy savings of BayesDDQN in 95% Confidence Interval：
 
 ```
 cd plot
-python Figure5-f.py
+python CI_energy.py
 ```
 
 For thermal status comparison:
 
 ```
 cd plot
-python Figure6-a.py
-python Figure6-b.py
-python Figure6-c.py
-python Figure6-d.py
+python CPU_temperature.py
+python Inlet_temperature.py
+python Cooling_temperature.py
+python Hotspots.py
 ```
 
 
