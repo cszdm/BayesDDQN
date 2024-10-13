@@ -11,13 +11,7 @@ import time
 import sys
 import random
 import copy
-# import cluster
-# from switch import _Switch
-# from node import _Node
-# from cluster import _Cluster
 
-# #get host info
-# CLUSTER = cluster.CLUSTER
 import flags
 FLAGS = flags.FLAGS
 
@@ -25,9 +19,7 @@ from runtime.rpc_stubs.master_to_worker_pb2 import JobInfo
 
 class _TFJobs(object):
 
-    '''
-    nested-class g_job
-    '''
+    
     class g_job(object):
         def __init__(self, cpu, total_cpu=0):
             self.num_cpu = num_cpu       
