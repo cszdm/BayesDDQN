@@ -1,6 +1,6 @@
 from runtime.rpc import scheduler_server, scheduler_client
 from controller import Controller
-from BayesDDQN import CLUSTER
+from BayesDDQN import DDQN
 
 import argparse
 import threading
@@ -91,4 +91,4 @@ class Scheduler(object):
 
 if __name__ == '__main__':
 
-    scheduler = Scheduler(args.scheduler_port, args.controller_port)
+    scheduler = DDQN(args.scheduler_port, args.controller_port)
