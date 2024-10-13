@@ -56,14 +56,14 @@ class Scheduler(object):
 
     def _report_itertime_impl(self, job_id, iter_time, src_utils):
         success = True
-        num_gpu = 0
+        num_cpu = 0
         for rjob_id in job_id:
             if rjob_id>=0:
                 rjob = JOBS.find_runnable_job(rjob_id)
                 rjob['real_itertime'] = copy.deepcopy(list(iter_time))
-                num_gpu = rjob['num_gpu']
+                num_cpu = rjob['num_cpu']
         for i in range(self._src_num): # cpu util is approximate
-            self._src_utils[i] += src_utils[i]*num_gpu
+            self._src_utils[i] += src_utils[i]*num_cpu
         self._logger.info(f'scheduler, update job {job_id} iter_time {list(iter_time)}; src_utils {src_utils} -> {self._src_utils}')
         return success
 
