@@ -50,7 +50,33 @@ simulator/: code for simulation
 
 plot/: code for drawing figures of experimental results
 
+data-traces: dataset for wind speed and PMs workload, the citations of them are also given
+
 requirements.txt: Python dependencies
+
+# Usage
+
+**Requirements**
+
+The repo is tested on:
+
+* Ubuntu 22.04.4 LTS  
+* Python 3.9.6  
+* Tensorflow 2.6.0  
+
+```pip install -r requirements.txt```
+
+**MTL-LSTM Prediction**
+
+For regression and prediction, MTL-LSTM is used to evaluate energy consumption and thermal status simultaneously:  
+
+```
+cd simulator
+python MTL-LSTM.py
+```
+
+
+
 
 
 
