@@ -8,4 +8,4 @@ Below is the overall architecture of the proposed holistic energy optimization f
 
 ![System MAPE Model-0718](https://github.com/user-attachments/assets/30a1aea9-eee7-4b4a-9085-5d9c4a5c9cde)
 
-
+<img src="https://github.com/user-attachments/assets/30a1aea9-eee7-4b4a-9085-5d9c4a5c9cde" width="100px">
