@@ -74,11 +74,82 @@ For regression and prediction, MTL-LSTM is used to evaluate energy consumption a
 cd simulator
 python MTL-LSTM.py
 ```
+**Analyze Module**
 
+Accuracy of various training methods:
 
+```
+cd simulator
+python eval_prediction.py
+python lstm.py
+python xgboost.py
+```
 
+Results will be consistent with Table 4 in the paper where prediction RMSEs of energy consumption and inlet temperature are compared.
 
+**Plan Module** 
 
+For VM migrations and supplied CRAC adjustments, BayesDDQN will be executed to achieve the holistic energy optimization:
 
+```
+cd simulator
+python dataloader.py
+python run_bayesddqn.py
+```
+
+The BayesDDQN will call Maze_BayesDDQN.py, run_maze.py, utilis.py automatically.
+
+**Comparision Methods**
+
+In this paper, TAS, TA, DeepEE, TAWM are evaluated as baseline methods, they will be executed:
+
+```
+cd simulator
+python TAS.py
+python TA.py
+python DeepEE.py
+python TAWM.py
+```
+
+**Evaluation Metrics**
+
+In this paper, prediction accuracy, energy consumption, temperature, RES utilization, and VM migrations are used as evaluation metrics, results are recorded which are shown in Figure 4 to Figure 7. 
+
+For MTL-LSTM prediction accuracy:
+
+```
+cd plot
+python Figure4-a.py
+python Figure4-b.py
+python Figure4-c.py
+```
+
+For energy consumption:
+
+```
+cd plot
+python Figure5-a.py
+python Figure5-b.py
+python Figure5-c.py
+python Figure5-d.py
+python Figure5-e.py
+```
+
+For evaluating energy savings of BayesDDQN in 95% Confidence Interval：
+
+```
+cd plot
+python Figure5-f.py
+```
+
+For thermal status comparison:
+
+```
+cd plot
+python Figure6-a.py
+python Figure6-b.py
+python Figure6-c.py
+python Figure6-d.py
+```
 
 
