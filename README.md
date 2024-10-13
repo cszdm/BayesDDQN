@@ -30,11 +30,11 @@ simulator/: code for simulation
 
 * MTL-LSTM.py: code for jointly predicting energy consumption and thermal status
 
-* 
-
 * DDQN.py and run_maze.py: code for training and learning of BayesDDQN
 
-* maze.py: code for evaluate state and action spaces through reward function
+* Maze_BayesDDQN.py: code for evaluate state and action spaces through reward function of BayesDDQN
+
+* Maze_DeepEE.py: code for evaluate state and action spaces through reward function of DeepEE
 
 * run_bayesddqn.py: code for running and testing BayesDDQN
 
@@ -48,7 +48,11 @@ simulator/: code for simulation
 
 * TAWM.py: code for TAWM approach reproduction
 
+plot/: code for drawing figures of experimental results
+
 requirements.txt: Python dependencies
+
+
 
 
 
