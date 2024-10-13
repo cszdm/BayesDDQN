@@ -17,4 +17,38 @@ In Plan module:
 * BayesDDQN based approach leverages Bayesian optimization to synchronize the adjustments of VM migration and cooling parameter within the hybrid action space of the DDQN for achieving the holistic energy optimization
 * Pre-cooling technology is employed to proactive adjustment stabilizes temperatures without falling into coordinating extra VM migrations within the hybrid action space to satisfy thermal constraints
 
+# Code Structure
+
+simulator/: code for simulation
+
+* dataloader.py: code for experimental parameters' settings, which can be classified as:
+  * PMs and VMs information: server counts and types, VM counts and types
+  * Thermal information: Heat Recirculation Matrix (HRM), thresholds of inlet temperature and CPU temperature, default values of thermal resistance and capacitance, supplied CRAC temperature
+  * Intial VM distribution: VMs' allocation information on PMs, which can be replaced by referring Example Description file
+
+* utils.py: code for collect PMs and VMs information
+
+* MTL-LSTM.py: code for jointly predicting energy consumption and thermal status
+
+* 
+
+* DDQN.py and run_maze.py: code for training and learning of BayesDDQN
+
+* maze.py: code for evaluate state and action spaces through reward function
+
+* run_bayesddqn.py: code for running and testing BayesDDQN
+
+* match.py: evaluate the VM allocation
+
+* TAS.py: code for TAS approach reproduction
+
+* TA.py: code for TA approach reproduction
+
+* deepee.py: code for DeepEE approach reproduction
+
+* TAWM.py: code for TAWM approach reproduction
+
+requirements.txt: Python dependencies
+
+
 
