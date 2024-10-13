@@ -18,7 +18,7 @@ In this paper, three datasets are used for MTL-LSTM prediction, wind energy gene
 }
 ```
 
-* The VM requests for evaluating BayesDDQN are sourced from Google cluster trace dataset, which is an open dataset and widely cited by related studies, for example: 
+* The VM requests for evaluating baseline methods are sourced from Google cluster trace dataset, which is an open dataset and widely cited by related studies, for example: 
 
 ```
 @article{reiss2011google,
