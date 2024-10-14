@@ -2,9 +2,22 @@
 
 In this paper, three datasets are used for MTL-LSTM prediction, wind energy generation, and VM requests, respectively.
 
-* The data traces for MTL-LSTM training and testing are sourced from the Melbourne Research Cloud datasets. The use of this dataset has been granted by Professor Buyya, University of Melbourne. The dataset link is https://docs.cloud.unimelb.edu.au/.
+* The data traces for MTL-LSTM training and testing are sourced from the Melbourne Research Cloud datasets, which has been widely cited by related studies, for example:
 
-* The data traces for calculating wind energy generation are sourced from the National Renewable Energy Laboratory (NREL), which is an open dataset and widely cited by related studies, for example: 
+```
+@article{ilager2020thermal,
+  title={Thermal prediction for efficient energy management of clouds using machine learning},
+  author={Ilager, Shashikant and Ramamohanarao, Kotagiri and Buyya, Rajkumar},
+  journal={IEEE Transactions on Parallel and Distributed Systems},
+  volume={32},
+  number={5},
+  pages={1044--1056},
+  year={2020},
+  publisher={IEEE}
+}
+```
+
+* The data traces for calculating wind energy generation are sourced from the National Renewable Energy Laboratory (NREL), which has been widely cited by related studies, for example: 
 
 ```
 @article{lu2018greenbdt,
@@ -18,7 +31,7 @@ In this paper, three datasets are used for MTL-LSTM prediction, wind energy gene
 }
 ```
 
-* The VM requests for evaluating baseline methods are sourced from Google cluster trace dataset, which is an open dataset and widely cited by related studies, for example: 
+* The VM requests for evaluating baseline methods are sourced from Google cluster trace dataset, which has been widely cited by related studies, for example: 
 
 ```
 @article{reiss2011google,
