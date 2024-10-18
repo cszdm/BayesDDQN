@@ -1,6 +1,8 @@
 # Example Description
 
-In this paper, experiments will run 10 times by the simulator, test instances will consider all possible PM anomalies scenarios (overload, inlet temperature violation, CPU temperature violation) under different VM initial deployments. Below is the detailed VMs' distributions examples adopted in our experiments, the number identifies VMs which are allocated to 10 racks (each containing 5 PMs): 
+In this paper, experiments will run 10 times by the simulator, test instances will consider all possible PM anomalies scenarios (overload, inlet temperature violation, CPU temperature violation) under different VM initial deployments. As described at the beginning of Section 5.1, the simulation environment in this study is an expanded version of previously published works [39, 40], which is designed to emulate a data center environment with 10 racks, each containing 5 PMs.
+
+Below is the detailed VMs' distributions examples adopted in our experiments: 
 
 * a. All normal:
 
